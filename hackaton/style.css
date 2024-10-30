@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+p {
+  font-size: 40px;
+}
+
+li::marker {
+  font-size: 40px;
+}
+
+@keyframes loader-spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes checkmark {
+  0% {
+      width: 50px;
+      height: 50px;
+      opacity: 100%;
+  }
+
+  50% {
+      width: 25px;
+      height: 25px;
+      opacity: 50%;
+  }
+
+  100% {
+      width: 50px;
+      height: 50px;
+      opacity: 100%;
+  }
+}
+
+/* body {
+  overflow: hidden;
+
+} */
+
+.content {
+  display: flex;
+}
+
+.menu {
+  width: 80%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sideGlideR {
+  width: 10%;
+  height: 100vh;
+  background-color: rgb(137, 184, 255);
+  background-image: url(./img/logo.png);
+  background-size: 40%;
+}
+
+.sideGlideL {
+  width: 10%;
+  height: 100vh;
+  background-color: rgb(137, 184, 255);
+  background-image: url(./img/logo.png);
+  background-size: 40%;
+}
+
+
+.sing-in {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  width: 800px;
+  height: 200px;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.name {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 1px rgba(2, 209, 159, 75%);
+}
+
+.surname {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 1px rgba(137, 184, 255, 75%);
+}
+
+.red {
+  border: 2px solid rgb(255, 0, 0);
+  box-shadow: 3px 3px 2px 1px rgba(255, 0, 0, 75%);
+}
+
+.circle {
+  background-color: rgb(24, 195, 24);
+  border-radius: 45em;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.verifed {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.circle:hover {
+  animation-name: loader-spin;
+  animation-duration: 1s;
+}
+
+.sing-in-txt {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* DIARY */
+.bd{
+  background: rgb(0,74,121);
+  background: linear-gradient(90deg, rgba(0,74,121,0.75) 0%, rgba(137,184,255,0.75) 100%);  
+}
+
+.avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 3em;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgba(0, 0, 0, 85%);
+  margin: 0 auto;
+  background-image: url(./img/avatar.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.nameD {
+  font-size: 24px;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.surnameD {
+  font-size: 24px;
+  text-decoration: underline;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.contentDR {
+  display: flex;
+  align-items: flex-end;
+}
+
+.less {
+  position: relative;
+  left: -115px;
+}
+
+.lessons {
+  margin-bottom: 10px;
+  text-decoration: underline;
+
+}
+
+.disc {
+  margin-top: 10px;
+}
+
+.time {
+  position: relative;
+  left: 95px;
+}
+
+.times {
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.markHolder {
+  width: 330px;
+  height: 50px;
+}
+
+.mark {
+  font-size: 16px;
+}
+
+#balance {
+  font-size: 16px;
+}
+
+.sup {
+  font-size: 18px;
+}
+
+#dream {
+  font-size: 15px;
+}
+
+.offcanvas-backdrop.show {
+  opacity: 0 !important;
+}
+
+.gr {
+  display: grid;
+  grid-template-areas: "a d""a c""a b";
+  gap: 5px;
+  justify-items: center;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.card3 {
+  grid-area: a;
+}
+
+.card2 {
+  grid-area: b;
+}
+
+.card1 {
+  grid-area: c;
+}
+
+.card0 {
+  grid-area: d;
+}
+
+.logoOfGham {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%);
+  height: 100px;
+}
+
